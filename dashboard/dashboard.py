@@ -2,10 +2,9 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 import streamlit as st
-from babel.numbers import format_currency
 sns.set_theme(style='dark')
 
-cleaned_day_df = pd.read_csv("cleaned_day_df.csv")
+cleaned_day_df = pd.read_csv("dashboard/cleaned_day_df.csv")
 
 # convert the 'dteday' column to datetime
 cleaned_day_df["dteday"] = pd.to_datetime(cleaned_day_df["dteday"])
